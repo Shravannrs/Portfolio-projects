@@ -1,3 +1,5 @@
+--creating a new database for sql queries in azure data studio for mac, really not straightforward for mac users  
+
 USE master;
 GO
 
@@ -13,7 +15,7 @@ IF SERVERPROPERTY('ProductVersion') > '12'
    ALTER DATABASE [PortfolioProject] SET QUERY_STORE = ON;
 GO
 
-
+--testing if the tables and the database work
 select *
 from PortfolioProject..[covidvaccinations]
 order by 3,4
